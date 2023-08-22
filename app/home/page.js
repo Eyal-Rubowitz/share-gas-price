@@ -7,6 +7,9 @@ export default function Home() {
             <div className="bg-red-400 flex justify-between item-center mb-4">
                 <h1 className="text-2xl">Home Page</h1>
                 <Link href="/about">About</Link>
+                <br/>
+                <br/>
+                <Link href="/">Back To Main Page</Link>
             </div>
         </>
     )

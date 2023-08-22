@@ -1,18 +1,23 @@
-import gassDB from "../../database/db";
+import { GetGassDB } from "../../database/gassDB";
+// import stationDB from "../api/database/route";
+import { getStationData } from '../api/database/route';
 
-export default function SearchBar() {
-  console.log(gassDB)
+export default async function SearchBar() {
+
+  const stationDB = getStationData();
+
+  console.log(stationDB);
   return (
     <div className="flex">
+          <h2>Share Prices App</h2>
           <select>
-            <option>place 1</option>
-            <option>place 2</option>
-            <option>place 3</option>
-            <option>place 4</option>
+            {stationDB.map(station => (
+              <option key={station.id}>{station.name}</option>
+            ))}
           </select>
           <select>
-            {gassDB.map(item => (
-              <option key={item.full}>{item.full}</option>
+            {GetGassDB().map(item => (
+              <option key={item.id}>{item.full.type}</option>
             ))}
           </select>
           <input type="text" placeholder="search bar"></input>
