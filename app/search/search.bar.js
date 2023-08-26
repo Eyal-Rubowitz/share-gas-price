@@ -9,7 +9,7 @@ export default async function SearchBar() {
   console.log(stationDB);
   return (
     <div className="flex">
-          <h2>Share Prices App</h2>
+          <h2>Choose station</h2>
           <select>
             {stationDB.map(station => (
               <option key={station.id}>{station.name}</option>

@@ -1,10 +1,11 @@
 
 "use client"
 
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-import HeaderNavLinks from '../public/app.routing.link.list/header.nav.rout.list'
-import '@styles/globals.css'
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import HeaderNavLinks from '../public/app.routing.link.list/header.nav.rout.list';
+import '@styles/globals.css';
+import Image from 'next/image';
 
 export default function Header({}) {
     // const router = useRouter();
@@ -14,9 +15,10 @@ export default function Header({}) {
     return (<>
         <nav className="container flex justify-around py-8 mx-auto bg-white">
             <div>
-                <h3 className='text-2xl font-medume text-blue-600'>
-                    App Name
-                </h3>
+                <h2 className='text-3xl font-medume text-blue-600'>
+                    <Image src="../public/vercel.svg" width={20} height={20} alt=""/>
+                    Share Prices App
+                </h2>
                 <div className='flex space-x-8'>
                     {routHeaderLinks.map(({path, lable}) => (
                         <Link key={path} href={path} passHref>
