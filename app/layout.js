@@ -12,6 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
+        <h2 style={{backgroundColor: 'lightblue'}}>Share Gass Prices App</h2>
         {children}
       </body>
     </html>
