@@ -1,5 +1,5 @@
 const ErrorThrower = () => {
-    throw new Error('Cool Error');
+    return <div>{JSON.parse('{im not json!')}</div>
 };
 
 export default ErrorThrower;
