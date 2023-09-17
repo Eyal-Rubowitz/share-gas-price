@@ -1,5 +1,5 @@
 const ErrorThrower = () => {
-    return <div>{JSON.parse('{im not json!')}</div>
+    return <div>{JSON.parse(fetch('non-existing-url'))}</div>
 };
 
 export default ErrorThrower;
