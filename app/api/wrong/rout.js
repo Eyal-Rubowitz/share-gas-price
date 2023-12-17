@@ -4,8 +4,6 @@ export async function GET() {
     return getgData();
 }
 
-
 export const getData = async () => { 
-    // const res = await fetch('https://catfact.ninja/fact');
     return NextResponse.json((Error("403 Forbidden Error - refuses to fulfill a request due to authorization issues")));
 }

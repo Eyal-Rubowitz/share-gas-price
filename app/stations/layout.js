@@ -5,8 +5,8 @@ export const metadata = {
 
 export default function SearchLayout({ children }) {
   return (
-      <div>
-        <div>hello station section</div>
+      <div className="background: bg-red-300">
+        <div><h3>Hello station section</h3></div>
         <section>
           {children} 
         </section>

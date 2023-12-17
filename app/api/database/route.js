@@ -1,8 +1,8 @@
-// import { NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
 
 export async function GET() {
-    return getStationData();
-    // return NextResponse.json((await res.json()));
+    // return getStationData();
+    return NextResponse.json(getStationData());
 }
 
 export const getStationData = () => {

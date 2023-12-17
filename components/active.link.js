@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-// import Link from 'next/link'
+import Link from 'next/link'
 
 const ActiveLink = ({ children, href}) => {
     const router = useRouter()
@@ -14,9 +14,9 @@ const ActiveLink = ({ children, href}) => {
     }
 
     return (
-        <a href={href} onClick={handleClick} style={style}>
+        <Link href={href} onClick={handleClick} style={style}>
             {children}
-        </a>
+        </Link>
     )
 }
 

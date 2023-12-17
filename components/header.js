@@ -22,7 +22,7 @@ export default function Header({}) {
                 <div className='flex space-x-8'>
                     {routHeaderLinks.map(({path, lable}) => (
                         <Link key={path} href={path} passHref>
-                            <div class={`text-sm font-medium ${
+                            <div className={`text-sm font-medium ${
                                          pathname === path
                                            ? "border-b-8 border-blue-800"
                                            : "text-gray-700"}`}>
